@@ -27,3 +27,4 @@ function getAkanName(){
   else if(female.checked == true){
     alert("You were born on " + daysOfTheWeek[d] + " and your Akan name would be: " + femaleNames[d]);
   }
+}
