@@ -8,39 +8,39 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
-  <div class="container-fluid bg">
-    <h1>Akan Birthday Identifier</h1>
-    <p>A web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born..</p>
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <form class="form-container" id="form">
-            <h3>Enter Your details</h3>
-            <div class="form-group">
-              <label for="day">Day</label>
-              <input type="number" class="form-control" name="day" id="day" required max="31" min="1">
-            </div>
-            <div class="form-group">
-              <label for="month">Month</label>
-              <input type="number" class="form-control" name="month" id="month" required max="12" min="1">
-            </div>
-            <div class="form-group">
-              <label for="year">Year</label>
-              <input type="number" class="form-control" name="year" id="year" required>
+    <div class="container-fluid bg">
+      <h1>Akan Birthday Identifier</h1>
+      <p>A web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born..</p>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <form class="form-container" id="form">
+              <h3>Enter Your details</h3>
+              <div class="form-group">
+                <label for="day">Day</label>
+                <input type="number" class="form-control" name="day" id="day" required max="31" min="1">
               </div>
-            <div class="radio-buttons">
-              <label for="male">Male</label>
-              <input type="radio" name="gender" value="male" id="male"required>
-              <label for="female">Female</label>
-              <input type="radio" name="gender" value="female" id="female" required>
-            </div>
-            <button type="submit" onclick="getAkanName()" class="btn btn-success btn-block">Get Akan Name</button>
-            <button type="reset" onclick="clearAkanMessage()" class="btn btn-success btn-block">Clear</button>
-          </form>
-      </div>
-  </div>
-  <footer class="footer">
-    <p>&copy; 2020 All Rights Reserved. Developed by Michael Ngugi</p>
-  </footer>
-  <script src="js/script.js"></script>
-</body>
-</html>
+              <div class="form-group">
+                <label for="month">Month</label>
+                <input type="number" class="form-control" name="month" id="month" required max="12" min="1">
+              </div>
+              <div class="form-group">
+                <label for="year">Year</label>
+                <input type="number" class="form-control" name="year" id="year" required>
+                </div>
+              <div class="radio-buttons">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="male" id="male"required>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="female" id="female" required>
+              </div>
+              <button type="submit" onclick="getAkanName()" class="btn btn-success btn-block">Get Akan Name</button>
+              <button type="reset" onclick="clearAkanMessage()" class="btn btn-success btn-block">Clear</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2020 All Rights Reserved. Developed by Michael Ngugi</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+  </html>
