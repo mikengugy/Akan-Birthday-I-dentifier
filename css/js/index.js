@@ -15,3 +15,14 @@ function getAkanName(){
     else if(month <=0 || month >12 || (month == 2 && day > 29)){
        alert("Please enter valid month") 
     }
+    var a = Math.floor((14 - month) / 12)
+  var y = year - a
+  var m = month + 12 * a - 2
+  var d = (day + y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(year / 400) + Math.floor((31 * m )/ 12)) % 7;
+
+  if(male.checked == true){
+     alert("You were born on " + daysOfTheWeek[d] + " and your Akan name would be: " + maleNames[d]);
+  }
+  else if(female.checked == true){
+    alert("You were born on " + daysOfTheWeek[d] + " and your Akan name would be: " + femaleNames[d]);
+  }
